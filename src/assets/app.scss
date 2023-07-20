@@ -1,0 +1,21 @@
+@import "color";
+
+@mixin customFunc($bgcolor){
+    background-color: $bgcolor;
+    padding: 1rem 1rem;
+}
+
+
+
+.product{
+    
+    .p1{
+        @include customFunc(orange)
+    }
+    .p2{
+        @include customFunc(white)
+    }
+    .p3{
+        @include customFunc(green)
+    }
+}
